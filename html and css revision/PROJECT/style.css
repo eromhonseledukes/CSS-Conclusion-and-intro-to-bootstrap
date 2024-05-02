@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto 20px;
+    padding: 20px 40px 20px 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.todo-app h2 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: (#FFFFFF);
+}
+.input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 20;
+}
+button {
+    padding: 15ppx 20px;
+    border: 2px solid red;
+    outline: none;
+    background: blue;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 20;
+    border-radius: 20px;
+    color: white;
+}
+ul li {
+    list-style: none;
+    padding:  20px 10px 12px 20px;;
+    border-radius:17px;
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+ul li::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 10px;
+}
+ul li.checked {
+    color: orange;
+    text-decoration: underline;  
+}
+ul li.checked::before {
+    background-image: url(images/checked.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ul li span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 20;
+    height: ;
+}
+
+
+
+
+

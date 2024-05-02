@@ -1,0 +1,251 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(92, 87,81);
+    
+}
+
+.logo img{
+    width: 150px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+ul a{
+    text-decoration: none;
+    margin-left: 7px;
+    color: white;
+    font-size: oblique
+}
+
+.home{
+    background-image: url(/images/ricardo-gomez-angel-5YM26lUicfU-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.center h2{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+
+.center p{
+    color: gray;
+    font-style: oblique;
+}
+
+.btn{
+    padding: 50px;
+}
+
+.btn-home button{
+    height: 61px;
+    width: 40%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(92,87, 81);
+    color: rgb(108, 37,37);
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;  
+}
+
+.btn-home button:hover{
+    background-color: azure;
+    color: bluevoilent;
+    transition: 1s;
+}
+
+/*services styling*/
+.services-content{
+    padding-top: 70px;
+}
+
+.service-content{
+    text-align: center; 
+}
+
+
+.main-services{
+    padding-top: 50px;
+    display: flex;
+    text-align: center;
+}
+
+.main-services .sub-services{
+    background-color: rgb(58, 20,20);
+    margin: 20px;
+    padding: 50px;
+}
+
+.sub-services h4{
+    font-size: 25px;
+    color: rgb(110, 110, 159);
+    font-style: oblique;
+    font-weight: 900;
+}
+
+.sub-services p{
+    color: white;
+}
+
+
+.btn-services{
+    padding: 50px;
+}
+.btn-services button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: brown;
+}
+
+/* Trendind Updates */
+.trending-images{
+    padding-top: 50px;
+    display: flex;
+}
+.trending img{
+    width:210px;
+    height: 200px;
+    margin: 25px;
+}
+
+.trending h4{
+    margin-left: 10px
+}
+
+.register{
+    text-align: center;
+
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.con{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75{
+   float: left;
+   width: 75%;
+   margin-top: 6px
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* update section*/
+.updatext{
+    padding-top: 100px;
+}
+
+.update-content{
+    text-align: center;
+}
+.update-content h2{
+    font-weight: 900;
+    color: rgb(105, 20, 20);
+    font-size: 30px;
+}
+.update-content p{
+    font-style: italic;
+}
+
+.update-display{
+    display: flex;
+}
+.center{
+    text-align: center;
+}
+
+.icons{
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.icons i{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 80%;
+}
+.update-content1{
+    font-weight: 800;
+    font-style: oblique;
+    color: #224324;
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+}
+
+.footer-content{
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.footer-content h4{
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and(max-width: 600px){
+    .col-25, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
